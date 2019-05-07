@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<title>Reel Talk</title>
+<head>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+#nav_menu ul {
+list-style-type: none;
+position: relative; }
+#nav_menu ul li { float: left; }
+#nav_menu ul ul {
+display: none;
+position: absolute;
+top: 100%; }
+#nav_menu ul ul li {
+float: none;
+position: relative; }
+#nav_menu ul ul li ul {
+position: absolute;
+left: 100%;
+top: 0; }
+#nav_menu ul li.lastitem ul li ul {
+position: absolute;
+left: -100%;
+top: 0; }
+#nav_menu ul li:hover > ul { display: block; }
+#nav_menu > ul::after {
+content: "";
+clear: both;
+display: block; }
+
+#nav_menu ul {
+margin: 0;
+padding: 0; }
+#nav_menu ul li a {
+text-align: center;
+display: block;
+width: 120px;
+padding: 4px;
+text-decoration: none;
+background-color: red;
+color: white;
+font-weight: bold; }
+#nav_menu ul li.lastitem a {
+width: 178px; }
+#nav_menu ul li a.current {
+color: yellow; }
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+background-color: gray; }
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 10px;
+  color: red;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 10px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+}
+p.welcome {
+font-family: "Times New Roman", Times, serif;
+font-size: medium;
+text-align: center;
+}
+p.opinion { text-align: center; }
+
+p.intro {text-align: center;}
+
+h1 {
+font-family: "Times New Roman", Times, serif;
+text-align: center;
+}
+
+h2 {text-align: center;}
+
+h3 { text-align: center; }
+
+img {  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;}
+</style>
+</head>
+<body>
+<nav id="nav_menu">
+  <ul>
+    <li><a href="homepage.html">Home</a> </li>
+    <li><a href="about.html">About</a> </li>
+<li><a href="genres.html">Genres</a>
+      <ul>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Drama</a></li>
+        <li><a href="#">Horror</a></li>
+        <li><a href="#">Thriller</a></li>
+      </ul>
+    </li>
+<li class="lastitem"><a href="directors.html">Directors</a>
+    <ul>
+      <li><a href="#">Denis Villeneuve</a></li>
+      <li><a href="#">Ridley Scott</a></li>
+      <li><a href="#">Martin Scorcese</a></li>
+      <li><a href="#">Quentin Tarantin</a></li>
+      <li><a href="#">Christopher Nolan</a></li>
+      <li><a href="#">Wes Anderson</a></li>
+      <li><a href="#">John Carpenter</a></li>
+      </ul>
+    </li>
+<li><a href="moviegenerator.html">Movie Generator</a></li>
+<li><a href="reviews.html">Reviews</a>
+<li><a href="news.html">News</a>
+<li><a href="contact.html">Contact</a>
+</ul></nav>
+
+<h1>Reel Talk</h1>
+<h3><i>Movie talk, for movie fans</i></h3>
+<img src="https://cdn3.iconfinder.com/data/icons/movies-and-film/85/FilmReel-512.png" alt="Movie Logo" style="width:260px;">
+<br>
+<p class="welcome">Welcome to Reel Talk! This page is dedicated to those who are <i>Die Hard</i> fans of movies or people who just enjoy catching a flick from time to time.</p>
+<br>
+<p class="intro">Visit the <strong>About</strong> page for backstory behind this website and behind the author of this website.
+<br><br>
+Take a look at the <strong>Directors</strong> page to be introduced to and learn about some of my favorite film directors, the movies they have made, and some directors that are similar to them in their own right.
+<br><br>
+Having a movie night but you or your friends can't make a decision on a film to watch? Why not try the <strong>Movie Generator</strong>? A randomized algorithm will pick out a movie from our online movie database!
+<br><br>
+Want to see my opinions on movies I have watched? Look no further! Take a gander at the <strong>Reviews</strong> page to see if my opinion can convince you to see (or not see) the movies I watch!
+<br><br>
+The movie making industry always has something going on, to keep up to date with the hustle and bustle, visit the <strong>News</strong> page to see what developments are happening around the world!
+<br><br>
+Have any questions? Want to make any reccomendations for me? Want to subscribe to our newsletter for frequent updates in and around the film industry? Visit the page <strong>Contact Us</strong> to get in touch!</p>
+
+<footer>
+        <p>Prepared by: Nolan Salus</p>
+        <p>Date: 03/15/2019</p>
+      </footer>
+
+</body>
+</html>
