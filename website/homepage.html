@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <title>Reel Talk</title>
+
 <head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <style>
 body {
   font-family: "Lato", sans-serif;
 }
+
 #nav_menu ul {
 list-style-type: none;
 position: relative; }
@@ -32,8 +39,8 @@ clear: both;
 display: block; }
 
 #nav_menu ul {
-margin: 0;
-padding: 0; }
+margin: 0px;
+padding: 10px;}
 #nav_menu ul li a {
 text-align: center;
 display: block;
@@ -49,6 +56,7 @@ width: 178px; }
 color: yellow; }
 #nav_menu ul li a:hover, #nav_menu ul li a:focus {
 background-color: gray; }
+
 
 .sidenav {
   width: 130px;
@@ -105,56 +113,115 @@ img {  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  float: left;
+  padding: 5px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card conainer */
+.container {
+  padding: 2px 18px;
+}
+
+a { color: red; }
+a:hover {font-style: italic;}
+
 </style>
 </head>
 <body>
 <nav id="nav_menu">
   <ul>
     <li><a href="homepage.html">Home</a> </li>
-    <li><a href="about.html">About</a> </li>
+    
 <li><a href="genres.html">Genres</a>
       <ul>
         <li><a href="#">Action</a></li>
         <li><a href="#">Drama</a></li>
-        <li><a href="#">Horror</a></li>
+        <li><a href="#">Comedy</a></li>
         <li><a href="#">Thriller</a></li>
       </ul>
     </li>
 <li class="lastitem"><a href="directors.html">Directors</a>
     <ul>
       <li><a href="#">Denis Villeneuve</a></li>
-      <li><a href="#">Ridley Scott</a></li>
       <li><a href="#">Martin Scorcese</a></li>
-      <li><a href="#">Quentin Tarantin</a></li>
+      <li><a href="#">Quentin Tarantino</a></li>
       <li><a href="#">Christopher Nolan</a></li>
-      <li><a href="#">Wes Anderson</a></li>
-      <li><a href="#">John Carpenter</a></li>
       </ul>
     </li>
 <li><a href="moviegenerator.html">Movie Generator</a></li>
 <li><a href="reviews.html">Reviews</a>
 <li><a href="news.html">News</a>
-<li><a href="contact.html">Contact</a>
+
 </ul></nav>
 
+<div class="sidenav">
+  <a href="about.html">About</a>
+</div>
+
+<br>
+<img src="https://static1.squarespace.com/static/58f2b4b620099e952f181fe3/t/5c33b31a8a922d3092477ee8/1546892234664/Reel+Talk+Logo+1.png" alt="Movie Logo" style="width:260px;">
+<br><br>
 <h1>Reel Talk</h1>
 <h3><i>Movie talk, for movie fans</i></h3>
-<img src="https://cdn3.iconfinder.com/data/icons/movies-and-film/85/FilmReel-512.png" alt="Movie Logo" style="width:260px;">
-<br>
-<p class="welcome">Welcome to Reel Talk! This page is dedicated to those who are <i>Die Hard</i> fans of movies or people who just enjoy catching a flick from time to time.</p>
-<br>
-<p class="intro">Visit the <strong>About</strong> page for backstory behind this website and behind the author of this website.
-<br><br>
-Take a look at the <strong>Directors</strong> page to be introduced to and learn about some of my favorite film directors, the movies they have made, and some directors that are similar to them in their own right.
-<br><br>
-Having a movie night but you or your friends can't make a decision on a film to watch? Why not try the <strong>Movie Generator</strong>? A randomized algorithm will pick out a movie from our online movie database!
-<br><br>
-Want to see my opinions on movies I have watched? Look no further! Take a gander at the <strong>Reviews</strong> page to see if my opinion can convince you to see (or not see) the movies I watch!
-<br><br>
-The movie making industry always has something going on, to keep up to date with the hustle and bustle, visit the <strong>News</strong> page to see what developments are happening around the world!
-<br><br>
-Have any questions? Want to make any reccomendations for me? Want to subscribe to our newsletter for frequent updates in and around the film industry? Visit the page <strong>Contact Us</strong> to get in touch!</p>
 
+<p class="welcome">Welcome to Reel Talk! This page is dedicated to those who are <i>Die Hard</i> fans of movies or people who just enjoy catching a flick from time to time.</p>
+
+<br>
+
+<div class="container">
+  <h3>Page Directory</h3>
+  <br>
+
+  <div class="card-columns">
+    <div class="card bg-light">
+      <div class="card-body text-center">
+      	<h3><a href="genres.html">Genres</a></h3>
+        <p class="card-text">Learn more about the many genres of film!</p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+      	<h3><a href="directors.html">Directors</a></h3>
+        <p class="card-text">Learn about some of my favorite directors!</p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+      	<h3><a href="moviegenerator.html">Movie Generator</a></h3>
+        <p class="card-text">Get a random movie picked for you!</p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+      	<h3><a href="reviews.html">Reviews</a></h3>
+        <p class="card-text">See my latest reviews on the movies I've seen!</p>
+      </div>
+    </div>  
+    <div class="card bg-light">
+      <div class="card-body text-center">
+      	<h3><a href="news.html">News</a></h3>
+        <p class="card-text">The latest news in the movie-making industry!</p>
+      </div>
+    </div>
+    <div class="card bg-light">
+      <div class="card-body text-center">
+      	<h3><a href="contact.html">Contact</a></h3>
+        <p class="card-text">Have anything to say? Contact me!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
 <footer>
         <p>Prepared by: Nolan Salus</p>
         <p>Date: 03/15/2019</p>

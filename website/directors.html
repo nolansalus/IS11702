@@ -9,7 +9,7 @@ body {
 
 <style>
 #nav_menu ul {
-list-style-type: none;
+list-style: none;
 position: relative; }
 #nav_menu ul li { float: left; }
 #nav_menu ul ul {
@@ -34,8 +34,8 @@ clear: both;
 display: block; }
 
 #nav_menu ul {
-margin: 0;
-padding: 0; }
+margin: 0px;
+padding: 10px;}
 #nav_menu ul li a {
 text-align: center;
 display: block;
@@ -51,40 +51,6 @@ width: 178px; }
 color: yellow; }
 #nav_menu ul li a:hover, #nav_menu ul li a:focus {
 background-color: gray; }
-
-.sidenav {
-  width: 130px;
-  position: fixed;
-  z-index: 1;
-  top: 20px;
-  left: 10px;
-  background: #eee;
-  overflow-x: hidden;
-  padding: 8px 0;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 10px;
-  color: red;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #064579;
-}
-
-.main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  font-size: 10px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 10px;}
-}
 
 p.directors {
 font-family: "Times New Roman", Times, serif;
@@ -109,45 +75,40 @@ img {  display: block;
 </style>
 </head>
 <body>
-
 <nav id="nav_menu">
   <ul>
     <li><a href="homepage.html">Home</a> </li>
-    <li><a href="about.html">About</a> </li>
+    
 <li><a href="genres.html">Genres</a>
       <ul>
         <li><a href="#">Action</a></li>
         <li><a href="#">Drama</a></li>
-        <li><a href="#">Horror</a></li>
+        <li><a href="#">Comedy</a></li>
         <li><a href="#">Thriller</a></li>
       </ul>
     </li>
-<li class="lastitem"><a href="directors.html">Directors</a>
+<li><a href="directors.html">Directors</a>
     <ul>
       <li><a href="#">Denis Villeneuve</a></li>
-      <li><a href="#">Ridley Scott</a></li>
       <li><a href="#">Martin Scorcese</a></li>
-      <li><a href="#">Quentin Tarantin</a></li>
+      <li><a href="#">Quentin Tarantino</a></li>
       <li><a href="#">Christopher Nolan</a></li>
-      <li><a href="#">Wes Anderson</a></li>
-      <li><a href="#">John Carpenter</a></li>
       </ul>
     </li>
 <li><a href="moviegenerator.html">Movie Generator</a></li>
 <li><a href="reviews.html">Reviews</a>
 <li><a href="news.html">News</a>
-<li><a href="contact.html">Contact</a>
+
 </ul></nav>
+
 
 <h2>Directors<br></h2> 
 <p class='opinion'><i>Here you can check out some of my favorite directors in the film industry, some well known some not so.</i></p>
-<p class='directors'><strong><img src="https://vignette.wikia.nocookie.net/bladerunner/images/4/49/Ridley_Scott.jpg/revision/latest?cb=20161019042252" alt="Ridley" style="width:260px;">Ridley Scott:</strong> <br> <i>Blade Runner, The Martian, American Gangster</i><br><br><br>
+<p class='directors'>
 <strong><img src="https://www.neh.gov/sites/default/files/styles/featured_image_page/public/2018-07/martin-scorsese_0.jpg?h=68b97a5f&itok=XQTBU5am" alt="Martin" style="width:260px;">Martin Scorcese:</strong> <br> <i>Goodfellas, Taxi Driver, The Departed</i><br><br><br>
 <strong><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Quentin_Tarantino_by_Gage_Skidmore.jpg/220px-Quentin_Tarantino_by_Gage_Skidmore.jpg" alt="Quentin" style="width:200px;">Quentin Tarantino:</strong> <br> <i>Pulp Fiction, Django Unchained, Kill Bill</i><br><br><br>
 <strong><img src="https://pmcvariety.files.wordpress.com/2018/05/nolan.jpg?w=1000" alt="Christopher" style="width:260px;">Christopher Nolan:</strong> <br> <i>Inception, The Dark Knight, Memento</i><br><br><br>
-<strong><img src="https://www.indiewire.com/wp-content/uploads/2018/08/shutterstock_9407570t.jpg?w=780" alt="Wes" style="width:260px;">Wes Anderson:</strong> <br> <i>Grand Budapest Hotel, Rushmore, The Life Aquatic</i><br><br><br>
 <strong><img src="https://affif-sitepublic-media-prod.s3.amazonaws.com/film_film/0001/58/thumb_57783_film_film_384x485.jpeg" alt="Denis" style="width:200px;">Denis Villeneuve:</strong> <br> <i>Prisoners, Sicario, Arrival</i><br><br><br>
-<strong><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/JohnCarpenter2010_%28Cropped%29.jpg/220px-JohnCarpenter2010_%28Cropped%29.jpg" alt="John" style="width:200px;">John Carpenter:</strong> <br> <i>Escape from New York, The Thing, They Live</i>
 </p>
 </body>
 </html>
